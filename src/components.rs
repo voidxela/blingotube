@@ -17,11 +17,14 @@ pub fn App() -> Element {
 #[component]
 pub fn Blingo(scale: u64, angle: i64) -> Element {
     rsx! {
-        img {
-            src: BLINGO_PNG,
+        button {
             class: "blingo",
-            style: format!("transform: scale({}%) rotate({}deg)", scale, angle),
+            type: "button",
             onclick: move |_| *COUNT.write() += 1,
+            img {
+                src: BLINGO_PNG,
+                style: format!("transform: scale({}%) rotate({}deg)", scale, angle),
+            }
         }
     }
 }
