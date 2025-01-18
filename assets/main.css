@@ -13,11 +13,12 @@ body, #main {
     font-size: 16px;
     font-family: "Comic Sans", "Comic Sans MS", "Chalkboard SE", "Comic Neue", "Papyrus", casual, cursive, ui-sans-serif;
     background: rebeccapurple;
+    overflow-x: hidden;
 }
 
 main {
     display: flex;
-    padding-block: 4rem;
+    padding-block: 1rem;
     inline-size: 100%;
     flex-direction: column;
     place-items: center;
@@ -26,7 +27,7 @@ main {
 
 footer {
     display: flex;
-    padding-block: 4rem;
+    padding-block: 2rem;
     inline-size: 100%;
     flex-direction: column;
     place-items: center;
@@ -40,14 +41,30 @@ footer a {
 
 .blingo-clicker {
     display: flex;
+    flex-direction: column;
     place-items: center;
     place-content: center;
     flex-grow: 5;
     inline-size: 100%;
+    block-size: 100%;
 }
 
 .blingo {
+    display: flex;
+    place-items: center;
+    place-content: center;
+    flex-grow: 5;
+    inline-size: 100%;
+    block-size: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+}
+
+.blingo > img {
     width: 10rem;
     transition: transform 0.8s linear;
-    cursor: pointer;
 }
