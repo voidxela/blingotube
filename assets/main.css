@@ -11,7 +11,7 @@ body, #main {
     padding: 0;
     justify-content: space-between;
     font-size: 16px;
-    font-family: "Comic Sans MS", "Papyrus", cursive, ui-sans-serif;
+    font-family: "Comic Sans", "Comic Sans MS", "Chalkboard SE", "Comic Neue", "Papyrus", casual, cursive, ui-sans-serif;
     background: rebeccapurple;
 }
 
